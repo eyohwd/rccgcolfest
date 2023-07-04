@@ -24,7 +24,10 @@ const Navbar = () => {
         </Link>
          
          <li>Watch Live</li>
+         <Link to='/registermember' style={{textDecoration: "none"}}>
          <li>Members Registration</li>
+         </Link>
+         
          <li>Build Up YourSelf</li>
          <li>Join a Community</li>
          <li>Giving</li>

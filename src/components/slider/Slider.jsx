@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { sliderItems } from '../../data';
+import { Link } from "react-router-dom";
 //import {mobile} from "../responsive"
 //import { Link } from "react-router-dom";
 
@@ -86,7 +87,7 @@ color: white;
 const Button = styled.button`
 padding: 10px;
 font-size: 20px;
-background-color: transparent;
+background-color: #27213c;
 cursor: pointer;
 color: white;
 `
@@ -140,8 +141,10 @@ const Slider = () => {
             <InfoContainer>
                 <Title>{item.title}</Title>
                 <Desc>{item.desc}</Desc>
-                
+                <Link to='/registermember'>
                 <Button>{item.text}</Button>
+                </Link>
+                
                 
                 </InfoContainer>
             </Slide>))}
