@@ -27,10 +27,15 @@ const Navbar = () => {
          <Link to='/registermember' style={{textDecoration: "none"}}>
          <li>Members Registration</li>
          </Link>
-         
+         <Link to='/buildself' style={{textDecoration: "none"}}>
          <li>Build Up YourSelf</li>
+         </Link>
+         
          <li>Join a Community</li>
+         <Link to='/giving' style={{textDecoration: "none"}}>
          <li>Giving</li>
+         </Link>
+         
          
             </ul>
 

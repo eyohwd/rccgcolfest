@@ -1,0 +1,165 @@
+.giving{
+  // width: 100vw;
+    .top{
+
+      
+      height: 80vh;
+      // width: 100%;
+       background:  url("../../assets/giving.jpg") center;
+       background-size: cover;
+       background-position: center;
+    
+     display:flex ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      .title{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 3px;
+        
+      }
+
+      .desc{
+        text-align: center;
+        color: white;
+        padding: 20px 50px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-weight: 200;
+      }
+
+      button{
+        padding: 15px 30px;
+        background-color: rgb(104, 6, 25);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    }
+
+   
+
+    
+
+    .ussd{
+      
+      height: 150px;
+     // background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        font-size: 50px;
+        font-weight: 300;
+      }
+
+        
+    
+      
+    }
+
+    .banks{
+      height: 55vh;
+     // background-color: pink;
+      display: flex;
+
+      .left, .right{
+
+        
+         // align-items: center;
+       height: 100%;
+        //background-color: black;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
+        .card{
+          border: none;
+         // align-items: center;
+          width: 90%;
+          display: flex;
+        // background-color: white;
+          height: 100px;
+          img{
+            height: 100px;
+            width: 100px;
+           // align-self: flex-end;
+          }
+        //  flex: 1;
+
+        .ussdcode{
+          flex: 3;
+          margin-left: 20px;
+         width: 60%;
+         // background-color: white;
+          height: 100px;
+          display: flex;
+        // align-items: center;
+          //justify-content: center;
+          flex-direction: column;
+          padding-top: 10px;
+
+          .items{
+            display: flex;
+            color: gray;
+        .itemKey{
+          margin-right: 10px;
+          font-weight: bold;
+        }
+            
+          }
+        }
+        }
+        
+      
+      }
+      .right{
+        flex: 1;
+
+
+      }
+    }
+
+    .call{
+      
+      height: 150px;
+     // background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        color: rgb(6, 148, 205);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+    }
+
+
+    .accnum{
+      
+      height: 70px;
+     // background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        
+        font-size: 50px;
+        font-weight: 300;
+        color: rgb(54, 49, 49);
+       // text-align: center;
+      }
+
+    }
+
+}
