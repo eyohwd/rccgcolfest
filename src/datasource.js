@@ -103,7 +103,7 @@ export const depGallery3 = [
   { 
     id:7,
     title: "Good men",
-    img: DPT7,
+    img: DPT6,
 
   },
 

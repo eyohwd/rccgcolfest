@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { sliderItems } from '../../data';
 import { Link } from "react-router-dom";
+import {mobile} from "../../responsive";
 //import {mobile} from "../responsive"
 //import { Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ display: flex;
 position: relative;
 overflow: hidden;
 background-color: crimson;
+${mobile({ with: "350px", height: "250px"})}
 `
 const Arrow = styled.div`
 width: 50px;
@@ -47,6 +49,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 background-color: #${props=>props.bg};
+${mobile({alignItems: "normal", height: "80%"})}
 `
 const ImgContainer= styled.div`
 height: 100%;
@@ -55,10 +58,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 100px;
+${mobile({width:"100%", height: "100%", alignItems: "center", marginBottom: "10px", })}
 `
 const Image = styled.img`
-height: 70%;
-width: 80%
+height: 80%;
+width: 100%
+${mobile({height: "100%", width: "100%"})}
 `
 const InfoContainer = styled.div`
 flex: 1;
@@ -70,19 +75,23 @@ padding: 10px 70px 20px 30px;
 justify-content: center;
 align-items: center;
 // background-color: rgba(0, 0, 0, 0.278);
+${mobile({width: "20%", padding:"10px 30px", 
+height: "90%", alignItems: "normal", justifyContent: "center",})}
 `
 const Title = styled.h1`
 font-size: 50px;
 text-align: center;
 color: #27213c;
+${mobile({fontSize:"16px"})}
 `
 const Desc = styled.p`
 margin: 20px 0px;
 font-size: 20px;
-font-weight: 500px;
+font-weight: 500p;
 letter-spacing: 3px;
 text-align: center;
 color: white;
+${mobile({fontSize:"10px", letterSpacing: "0px", margin: "5px 0px" })}
 `
 const Button = styled.button`
 padding: 10px;
@@ -90,6 +99,7 @@ font-size: 20px;
 background-color: #27213c;
 cursor: pointer;
 color: white;
+${mobile({paddin: "0px", fontSize:"10px", marginLeft: "30px",})}
 `
 
 const Slider = () => {

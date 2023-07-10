@@ -1,14 +1,12 @@
-.buildself{
-  width: 100vw;
+.watchlife{
     .top{
 
       
-        height: 80vh;
+        height: 60vh;
         // width: 100%;
-         background:  url("../../assets/formfill2.jpg") center;
+        // background:  url("../../assets/watchlive1.jpg") center;
          background-size: cover;
          background-position: center;
-         
       
        display:flex ;
         flex-direction: column;
@@ -17,10 +15,15 @@
         gap: 5px;
   
         .title{
-          font-size: 50px;
-          font-weight: bold;
-          color: rgb(2, 2, 95);
-          letter-spacing: 3px;
+         // font-size: 50px;
+         // font-weight: bold;
+        //  color: rgb(2, 2, 95);
+          //letter-spacing: 3px;
+          .watchlife{
+            height: 150px;
+            width: 250px;
+            border-radius: 10px;
+          }
           
         }
   
@@ -31,40 +34,38 @@
           font-size: 20px;
           letter-spacing: 2px;
           word-spacing: 2px;
-          font-weight: 400;
-
-          @media screen and (max-width: 560px) {
-                 font-size: 16px;
-          }
+          font-weight: 600;
         }
   
         .logo{
-            width: 100px;
-            width: 100px;
+            width: 70px;
+            width: 70px;
+            border-radius: 50%;
         }
       
       }
 
       .workersvid{
         display: flex;
-        flex-direction: column;
         align-items: center;
-
-        @media screen and (max-width: 980px) {
-            flex-direction: column;
-        }
+        justify-content: center;
       
         height: 60vh;
         padding: 40px;
         .vidleft{
           padding: 10px;
            flex: 1;
+           align-items: center;
           
         }
 
         .textright{
           padding: 10px;
             flex: 1;
+            align-items: center;
+           // height: 50%;
+          //  width: 50%;
+
             
             .heading{
               font-size: 30px;
@@ -89,12 +90,10 @@
               background-color: rgb(2, 2, 95);
               cursor: pointer;
               font-size: 18px;
-              
-              
-
 
             }
 
         }
     }
 }
+

@@ -3,7 +3,7 @@
    background-color: rgb(213, 181, 181); 
    // width: ;
     padding: 30px;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +12,14 @@
     background-color: rgb(218, 192, 192);
     overflow: hidden;
 
+    @media screen and (max-width: 480px) {
+        
+        padding: 0px;
+        gap: 5px;
+        
+        
+       }
+
     .title{
         
         text-align: center;
@@ -19,12 +27,30 @@
         font-size: 24px;
         font-weight: bold;
         letter-spacing: 1px;
+        padding: 20px;
+
+        @media screen and (max-width: 480px) {
+        
+           font-size: 18px;
+           letter-spacing: 0px;
+           //word-spacing: 2px;
+            
+            
+           }
     }
 
     .desc{
         
         text-align: center;
         font-size: 18px;
+
+        @media screen and (max-width: 480px) {
+        
+            font-size: 16px;
+            padding: 20px;
+            
+            
+           }
     }
 
     hr{

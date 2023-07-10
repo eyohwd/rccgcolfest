@@ -1,11 +1,35 @@
 .container{
     display: flex;
-    flex-wrap: wrap;
+    
+
+    @media screen and (max-width: 480) {
+        flex-direction: column;
+        
+    }
+    flex-direction: column;
    // justify-content: center;
  
     
     
   // padding:10px;
-    flex:1;
+   // flex:1;
    // margin-top: 20px;
+
+   img{
+    @media screen and (max-width: 480px) {
+       // min-width: 30px;
+        height: 300px;
+    }
+   }
+
+
+   @media screen and (max-width: 480px) {
+        
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+   }
+
+   
 }

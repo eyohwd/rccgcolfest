@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { sliderItems } from '../data';
 import { aboutItems } from '../data';
+import { mobile } from "../responsive";
 //import {mobile} from "../responsive"
 //import { Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ display: flex;
 position: relative;
 overflow: hidden;
 background-color: black;
+${mobile({alignItems: "normal", height: "36vh", with:"50%"})}
 `
 const Arrow = styled.div`
 width: 50px;
@@ -47,6 +49,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 background-color: #${props=>props.bg};
+${mobile({alignItems: "normal", height: "80vh",})}
 `
 const ImgContainer= styled.div`
 height: 100%;
@@ -54,10 +57,12 @@ flex: 2.7;
 display: flex;
 // align-items: center;
 justify-content: center;
+${mobile({alignItems: "normal", height: "50%", })}
 `
 const Image = styled.img`
 height: 90%;
 width: 80%
+${mobile({alignItems: "normal", height: "60%", })}
 `
 const InfoContainer = styled.div`
 flex: 1;

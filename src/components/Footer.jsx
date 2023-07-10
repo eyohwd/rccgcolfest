@@ -1,10 +1,12 @@
 import { Facebook, Instagram, MailOutlined, Phone, Pinterest, Room, Twitter } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 //import {mobile} from "../responsive"
 
 const Container = styled.div`
    display: flex;
    background-color: crimson;
+   ${mobile({flexDirection: "column"})}
    
 `;
 const Left = styled.div`
@@ -42,6 +44,8 @@ const SocialIcon = styled.div`
 const Center = styled.div`
    flex: 1;
    padding: 20px;
+   ${mobile({display: "none"})}
+
    
 
 `;
