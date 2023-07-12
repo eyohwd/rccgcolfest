@@ -6,6 +6,7 @@ import COLIMG from "../../assets/col-logo.png"
 import "./buildself.scss";
 import ReactPlayer from 'react-player';
 
+
 const Buildself = () => {
   return (
     <div className='buildself'>
@@ -31,7 +32,7 @@ spiritual power to lead and take territory for God.
 
         <div className="workersvid">
             <div className="vidleft">
-               <ReactPlayer controls url='https://youtu.be/-VHWlgmGfIM'/>
+               <ReactPlayer width='640' height='360' controls url='https://youtu.be/-VHWlgmGfIM'/>
             </div>
             <div className="textright">
                 <h2 className='heading'>ABOUT DOME TRAINING INSTITUTE</h2>

@@ -55,10 +55,18 @@
         }
       
         height: 60vh;
-        padding: 40px;
+        padding: 10px;
         .vidleft{
           padding: 10px;
-           flex: 1;
+
+          flex: 1;
+
+           ReactPlayer{
+            @media screen and (max-width:480px) {
+                 min-width: 280px;
+                 height: 350px;
+            }
+           }
           
         }
 

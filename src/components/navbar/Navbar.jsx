@@ -32,10 +32,14 @@ const Navbar = () => {
          <li>Members Registration</li>
          </Link>
          <Link to='/buildself' style={{textDecoration: "none"}}>
-         <li>Build Up YourSelf</li>
+         <li>Become a Worker</li>
          </Link>
          <Link to='/department' style={{textDecoration: "none"}} >
-         <li>Join a Department</li>
+         <li>Departments</li>
+         </Link>
+
+         <Link to='/contact' style={{textDecoration: "none"}} >
+         <li>Contact Us</li>
          </Link>
          
          <Link to='/giving' style={{textDecoration: "none"}}>
@@ -49,8 +53,8 @@ const Navbar = () => {
               <input type="text" placeholder='Search...'/>
               <SearchOutlined style={{color: "white"}}/>
             </span>
-            <div className="mobile-menu-icon" onClick={()=> setIsMobile(!isMobile)}>
-              {isMobile ? (<Close/>) : (<Menu/>)}
+            <div className="mobile-menu-icon"  onClick={()=> setIsMobile(!isMobile)}>
+            {isMobile ? (<Close style={{fontSize: '30px'}}/>) : (<Menu style={{fontSize: '30px'}}/>)}
             </div>
         </div>
       

@@ -48,7 +48,7 @@
       .workersvid{
         display: flex;
         align-items: center;
-        justify-content: center;
+      flex-direction: column;
       
         height: 60vh;
         padding: 40px;
@@ -56,6 +56,13 @@
           padding: 10px;
            flex: 1;
            align-items: center;
+
+           ReactPlayer{
+            @media screen and (max-width:480px) {
+                 min-width: 280px;
+                 height: 350px;
+            }
+           }
           
         }
 
@@ -65,6 +72,13 @@
             align-items: center;
            // height: 50%;
           //  width: 50%;
+
+          ReactPlayer{
+            @media screen and (max-width:480px) {
+                 min-width: 280px;
+                 height: 350px;
+            }
+           }
 
             
             .heading{

@@ -45,6 +45,7 @@
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
         border-radius: 10px;
         justify-content: center;
+        padding: 10px;
        // width: 40%;
 
         @media screen and (max-width: 780px) {
@@ -107,19 +108,20 @@
 
                     input{
                         width: 100%;
-                        padding: 10px;
+                        padding: 14px;
                         border: none;
                         outline: none;
                         border-bottom: 1px solid gray;
                         color: black;
-                        font-size: 5px;
+                        font-size: 16px;
                         &::placeholder{
-                            font-size: 12px;
+                            font-size: 14px;
                         }
                     }
 
                     label{
                         display: flex;
+                        color: rgb(77, 72, 72);
                         align-items: center;
                         font-weight: 600;
                         gap: 7px;

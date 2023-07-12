@@ -3,7 +3,7 @@ import { Home } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import COLIMG from "../../assets/col-logo.png"
 import "./watchlife.scss";
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import watchIMG from "../../assets/watchlive1.jpg"
 
 const Watchlife = () => {
@@ -32,10 +32,10 @@ const Watchlife = () => {
 
         <div className="workersvid">
             <div className="vidleft">
-               <ReactPlayer controls url='https://youtu.be/F8PACpXMHLg'/>
+               <ReactPlayer width='350' height='400' controls url='https://youtu.be/F8PACpXMHLg'/>
             </div>
             <div className="textright">
-            <ReactPlayer controls url='https://youtu.be/KgUyWyMLZuY'/>
+            <ReactPlayer width='640' height='360' controls url='https://youtu.be/KgUyWyMLZuY'/>
                 <Link to='/workerform' >
                 
                 </Link>

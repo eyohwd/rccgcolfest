@@ -32,7 +32,7 @@ const Department = () => {
     <div className="t-wrapper">
         <div className="t-heading">
             <span>City of Light Departments</span> 
-             <span>Visitation From God...</span>
+             <span>Welcome to City Of Light</span>
            <div className="blur t-blur1" style={{background: "var(--purple)"}}></div>
             <div className="blur t-blur2" style={{background: "skyblue"}}></div>
         </div>

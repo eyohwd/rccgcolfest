@@ -11,7 +11,7 @@ export const sliderItems =[
       img: img1,
       title: "ALTER OF WORSHIP",
       desc: "OUR SERVICES ARE PACKED WITH GODS BLESSINGS",
-      text: "JOIN NOW", 
+      text: "JOIN", 
 
      // bg: "f5fafd",
 
@@ -22,7 +22,7 @@ export const sliderItems =[
       img: img2,
       title: "WORSHIP TEAM",
       desc: "USHER YOU INTO GODS PRESENCE WITH AWESOME PRAISE AND WORSHIP",
-      text: "VISIT US", 
+      text: "VISIT", 
       // bg: "fcf1ed",
     },
 

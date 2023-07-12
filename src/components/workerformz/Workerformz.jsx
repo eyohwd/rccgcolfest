@@ -10,7 +10,7 @@ const Workerformz = () => {
     <div className='workerformz'>
         
         <div className="top">
-            <h1>RCCG Dscipleship Training program</h1>
+            <h1>RCCG Workers Training <b/> program</h1>
         </div>
         <div className="bottom">
             <div className="left">

@@ -52,8 +52,9 @@
     padding: 2rem;
     width: 40rem;
     height: 17rem;
-    /* styles same as works.css */
-    background: #27213c;
+    /* styles same as works.css 
+     #27213c; */
+    background-color: black;
     border: 7px solid #d5bbb1;
     box-shadow: var(--boxShadow);
     border-radius: 20px;

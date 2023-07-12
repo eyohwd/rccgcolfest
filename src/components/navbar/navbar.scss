@@ -175,13 +175,13 @@
 
                }
 
-               .mobile-menu-icon{
+               .mobile-menu-icon {
                 display: none;
 
                 @media screen and (max-width: 780px) {
                      display: block;
                       position: absolute;
-                      font-size: 30px;
+                    // font-size: 30px;
                       color: white;
                       top: 15px;
                       right: 25px;

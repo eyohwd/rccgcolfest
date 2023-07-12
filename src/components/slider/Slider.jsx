@@ -99,7 +99,7 @@ font-size: 20px;
 background-color: #27213c;
 cursor: pointer;
 color: white;
-${mobile({paddin: "0px", fontSize:"10px", marginLeft: "30px",})}
+${mobile({paddin: "0px", fontSize:"10px", marginRight: "20px",})}
 `
 
 const Slider = () => {
