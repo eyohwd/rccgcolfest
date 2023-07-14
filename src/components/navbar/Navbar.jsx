@@ -45,6 +45,10 @@ const Navbar = () => {
          <Link to='/giving' style={{textDecoration: "none"}}>
          <li>Giving</li>
          </Link>
+
+         <Link to='/admin' style={{textDecoration: "none"}}>
+         <li>Admin</li>
+         </Link>
          
          
             </ul>

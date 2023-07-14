@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Send } from '@material-ui/icons';
-import Faith from '../../images/ava40a.jpg'
-import "./registermember.scss";
+import Faith from '../../images/workerimg.jpg'
+import "./registerworker.scss";
 import { db } from '../../firebase';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"; 
 import { useNavigate } from 'react-router-dom';
@@ -13,25 +13,25 @@ import Loader from '../loader/Loader';
 
 
 
-const Registermember = () => {
+const Registerworker = () => {
   
   const[data, setData] = useState({})
   const[isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate();
 
-  const handleInput = (e) => {
+  const handleworkerInput = (e) => {
      const name = e.target.name;
      const value = e.target.value;
      setData({...data, [name]: value})
   }
   console.log(data)
 
-  const handleAdd = async (e) => {
+  const handleworkerAdd = async (e) => {
      e.preventDefault()
      setIsLoading(true)
 
      try {
-        await addDoc(collection(db, "memberslist"), {
+        await addDoc(collection(db, "workerslist"), {
             ...data,
             timeStamp: serverTimestamp(),
           });
@@ -50,48 +50,58 @@ const Registermember = () => {
     {isLoading && <Loader/>}
     <div className='registermember'>
         <div className="top">
-            <h1>Members Registration</h1>
+            <h1>Workers Registration</h1>
         </div>
         <div className="bottom">
             <div className="left">
                 <img src={Faith} alt="prayer" className='formimage' />
             </div>
             <div className="right">
-                <form onSubmit={handleAdd} >
+                <form onSubmit={handleworkerAdd} >
                 <div className="formInput">
                     <label htmlFor="">Name:</label>
-                        <input type="text" placeholder='name' name="name" onChange={handleInput} />
+                        <input type="text" placeholder='name' name="name" onChange={handleworkerInput} />
                     </div>
 
                     <div className="formInput">
                     <label htmlFor="">Surname:</label>
-                        <input type="text" placeholder='surname' name="surname" onChange={handleInput} />
+                        <input type="text" placeholder='surname' name="surname" onChange={handleworkerInput} />
+                    </div>
+
+                    <div className="formInput">
+                    <label htmlFor="">Department:</label>
+                        <input type="text" placeholder='department' name="department" onChange={handleworkerInput} />
                     </div>
 
                     <div className="formInput">
                     <label htmlFor="">Address:</label>
-                        <input type="text" placeholder='address'name="address"  onChange={handleInput}/>
+                        <input type="text" placeholder='address'name="address"  onChange={handleworkerInput}/>
                     </div>
 
                     <div className="formInput">
                     <label htmlFor="">Phone number:</label>
-                        <input type="text" placeholder='phone number' name="phonenumber"  onChange={handleInput} />
+                        <input type="text" placeholder='phone number' name="phonenumber"  onChange={handleworkerInput} />
                     </div>
 
                     <div className="formInput">
                     <label htmlFor="">Email:</label>
-                        <input type="text" placeholder='email' name="email"  onChange={handleInput}/>
+                        <input type="text" placeholder='email' name="email"  onChange={handleworkerInput}/>
                     </div>
 
                     
                  <div className="formInput">
                     <label htmlFor="">Sex:</label>
-                        <input type="text" placeholder='sex' name='sex' onChange={handleInput}/>
+                        <input type="text" placeholder='sex' name='sex' onChange={handleworkerInput}/>
                     </div>
 
                     <div className="formInput">
                     <label htmlFor="">Marital status:</label>
-                        <input type="text" placeholder='marital status' name="maritalstatus" onChange={handleInput} />
+                        <input type="text" placeholder='marital status' name="status" onChange={handleworkerInput} />
+                    </div>
+
+                    <div className="formInput">
+                    <label htmlFor="">Month of Birth:</label>
+                        <input type="text" placeholder='month of birth' name="mob" onChange={handleworkerInput} />
                     </div>
 
                     <button type='submit'>
@@ -106,4 +116,4 @@ const Registermember = () => {
   );
 }
 
-export default Registermember;
+export default Registerworker;

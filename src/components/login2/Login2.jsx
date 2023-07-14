@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import "./login.scss";
+import "./login2.scss";
 import { auth } from '../../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ import Loader from '../../components/loader/Loader';
 
 
 
-const Login = () => {
+const Login2 = () => {
 
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");
@@ -29,7 +29,7 @@ const handleLogin = (e) => {
   const user = userCredential.user;
   
        dispatch({type:"LOGIN", payload:user})
-       navigate("/membersdata")
+       navigate("/workersdata")
        toast.success("Login Successful.")
        setIsLoading(false)
       
@@ -52,15 +52,13 @@ const handleLogin = (e) => {
 <div className='loginContainer'>
     
     <div className="loginform">
-        <h1 >Login To Members List</h1>
+        <h1 >Login To Workers List</h1>
     <form onSubmit={handleLogin}>
         <input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)} />
         <input style={{fontSize: "14px"}} type="password" placeholder='PassWord' onChange={(e)=>setPassword(e.target.value)} />
         <button type='submit'>LOGIN</button>
         {error && <span>Wrong email or password</span> }
-            <Link to='mylogin2'>
-            <button className='login2'>LOGIN2</button>
-            </Link>
+           
         
         
       </form>
@@ -72,4 +70,4 @@ const handleLogin = (e) => {
   );
 }
 
-export default Login;
+export default Login2;

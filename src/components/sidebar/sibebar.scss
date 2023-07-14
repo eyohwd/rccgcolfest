@@ -1,0 +1,53 @@
+.sibebar{
+   width: 120px;
+   border-right: 0.5px solid rgb(221, 212, 212);
+  
+
+    .containerb{
+       margin-top: 20px;
+       width: 120px;
+       
+    
+       
+        ul{
+
+            
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+
+            .itemlist{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+               // width: 110px;
+               padding: 5px;
+                margin-left: 0px;
+                cursor: pointer;
+    
+               
+                
+                &:hover{
+                  background-color: rgb(245, 241, 241);
+                }
+
+                .title{
+                
+                    
+                    font-size: 17px;
+                    font-weight: 500;
+                   // margin-bottom: 7px;
+                
+                
+    
+                
+                    
+                
+                }
+            }
+        }
+    }
+
+}
