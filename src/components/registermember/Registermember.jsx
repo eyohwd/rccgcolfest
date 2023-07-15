@@ -70,7 +70,7 @@ const Registermember = () => {
 
                     <div className="formInput">
                     <label htmlFor="">Address:</label>
-                        <input type="text" placeholder='address'name="address"  onChange={handleInput}/>
+                        <input type="text" placeholder='address' name="address"  onChange={handleInput}/>
                     </div>
 
                     <div className="formInput">

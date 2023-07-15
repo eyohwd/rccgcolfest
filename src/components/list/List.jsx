@@ -3,9 +3,35 @@ import { DataGrid } from '@mui/x-data-grid';
 import { db } from '../../firebase';
 import { collection, getDocs, deleteDoc, doc, onSnapshot } from 'firebase/firestore';
 import "./list.scss";
+import Notiflix from 'notiflix';
 
 const List = () => {
 const [data, setData] = useState([]);
+
+const confirmDelete = (id) => {
+     
+  Notiflix.Confirm.show(
+    'Delete Product!!!',
+    'You are about to delete this data',
+    'Delete',
+    'Cancel',
+    function okCb() {
+      handleDelete(id);
+    },
+    function cancelCb() {
+      console.log('Delete canceled');
+    },
+    {
+      width: '320px',
+      borderRadius: '3px',
+      titleColor: "orangered",
+      okButtonBackground: "orangered",
+      cssAnimationStyle: "zoom"
+      // etc...
+    },
+  );
+
+};
 
 const handleDelete = async(id)=> {
   try {
@@ -66,7 +92,7 @@ const actionColumn = [
   {field: "action", headerName:"Action", width: 100, renderCell: (params) => {
     return (
     <div className='cellAction'>
-     <div className='deleteButton' onClick={()=>handleDelete(params.row.id) }>Delete</div>
+     <div className='deleteButton' onClick={()=>confirmDelete(params.row.id) }>Delete</div>
     </div>
     );
   }},

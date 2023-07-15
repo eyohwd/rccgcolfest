@@ -35,7 +35,7 @@ spiritual power to lead and take territory for God.
                <ReactPlayer width='640' height='360' controls url='https://youtu.be/-VHWlgmGfIM'/>
             </div>
             <div className="textright">
-                <h2 className='heading'>ABOUT DOME TRAINING INSTITUTE</h2>
+                <h2 className='heading'>RCCG WORKERS TRAINING PROGRAM</h2>
                 <p>
                 We are committed to building an effective army for God. We hold regular training sessions where we teach the basic tenets of the Kingdom with a view to equipping
 God’s people with a strong sense of commitment for service in the local assembly as well as empower them with

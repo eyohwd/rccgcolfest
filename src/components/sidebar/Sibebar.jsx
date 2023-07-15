@@ -19,6 +19,12 @@ const Sibebar = () => {
             <span className='title'>Workerslist</span>
         </li>
          </Link>
+
+         <Link to='/trainingdata'  style={{textDecoration: "none"}}>
+         <li className='itemlist'>
+            <span className='title'>Workerstraining</span>
+        </li>
+         </Link>
         
       </ul>
         </div>

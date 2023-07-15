@@ -16,6 +16,7 @@ import { AuthContext } from "./context/authContext";
 import { useContext } from "react";
 import WorkersData from "./pages/workersdata/WorkersData";
 import Mylogin2 from "./pages/mylogin2/Mylogin2";
+import TrainingData from "./pages/trainingData/TrainingData";
 
 
 
@@ -46,6 +47,7 @@ function App() {
            <Route path='/contact' element={<Contactus/>}/> 
            <Route path='/membersdata' element={<RequireAuth><MembersData/></RequireAuth> }/> 
            <Route path='/workersdata' element={<RequireAuth><WorkersData/></RequireAuth> }/>
+           <Route path='/trainingdata' element={<RequireAuth><TrainingData/></RequireAuth> }/>
            <Route path='/admin' element={<Mylogin/>}/> 
            <Route path="/admin/mylogin2" element={<Mylogin2/>}/>
 
