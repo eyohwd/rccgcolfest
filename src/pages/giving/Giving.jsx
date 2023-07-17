@@ -1,10 +1,10 @@
 import React from 'react';
-import Firstbank from "../../images/firstbank.png"
+import Ecobank from "../../images/ecobanklogo.jpg"
 import Gtbank from "../../images/gtbank.png"
-import Accessbank from "../../images/acessbank.png"
-import Unionbank from "../../images/unionbank.png"
-import Fcmb from "../../images/fcmb.png"
-import Zenithbank from "../../images/zenithbank.png"
+//import Accessbank from "../../images/acessbank.png"
+//import Unionbank from "../../images/unionbank.png"
+//import Fcmb from "../../images/fcmb.png"
+//import Zenithbank from "../../images/zenithbank.png"
 import "./giving.scss";
 import { Home } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
@@ -26,14 +26,14 @@ const Giving = () => {
                  greatest investment you make in the lives of others.
                  Your generosity helps spread Christ's 
                  message of hope and healing.</p>
-            <button>GIVE ONLINE USING CARD</button>
+            <button>BANK TRANSFER</button>
         </div>
         
         
 
         <div className="call">
             <h1>IF YOU HAVE ANY ISSUES WITH PAYMENT,<br/> PLEASE CONTACT US AT
-                col@gmail.com or call 0904352615.
+                col@gmail.com or call 08093603724.
             </h1>
         </div>
 
@@ -48,7 +48,7 @@ const Giving = () => {
             <div className="left">
                 
                 <div className="card">
-                    <img src={Firstbank} alt="" />
+                    <img src={Ecobank} alt="" />
                
                
                
@@ -58,13 +58,18 @@ const Giving = () => {
                     
 
                     <div className="items">
+                    <span className="itemKey">TITLE:</span>
+                    <span className="itemValue">GMHS/VIGILS</span>
+                    </div>
+
+                    <div className="items">
                     <span className="itemKey">Acc Name:</span>
-                    <span className="itemValue">City of light</span>
+                    <span className="itemValue">RCCG CITY OF LIGHT</span>
                     </div>
 
                     <div className="items">
                     <span className="itemKey">Acc Number:</span>
-                    <span className="itemValue">012376547</span>
+                    <span className="itemValue">5332010221</span>
                     </div>
                 
                 
@@ -83,19 +88,24 @@ const Giving = () => {
                     
 
                     <div className="items">
+                    <span className="itemKey">TITLE:</span>
+                    <span className="itemValue">TITHES AND OFFERINGS</span>
+                    </div>
+
+                    <div className="items">
                     <span className="itemKey">Acc Name:</span>
-                    <span className="itemValue">City of Light</span>
+                    <span className="itemValue">RCCG CITY OF LIGHT</span>
                     </div>
 
                     <div className="items">
                     <span className="itemKey">Acc Number:</span>
-                    <span className="itemValue">0986645398</span>
+                    <span className="itemValue">0012848158</span>
                     </div>
                 </div>
 
                 </div>
                 
-                <div className="card">
+              {/*  <div className="card">
                     <img src={Accessbank} alt="" />
 
                     <div className="ussdcode">
@@ -112,7 +122,7 @@ const Giving = () => {
                     </div>
                 </div>
 
-                </div>
+                </div> */} 
 
 
             </div>
@@ -125,26 +135,31 @@ const Giving = () => {
             <div className="right">
 
             <div className="card">
-                    <img src={Unionbank} alt="" />
+                    <img src={Gtbank} alt="" />
 
                     <div className="ussdcode">
 
 
                     <div className="items">
+                    <span className="itemKey">TITLE:</span>
+                    <span className="itemValue">BUILDING PROJECT</span>
+                    </div>
+
+                    <div className="items">
                     <span className="itemKey">Acc Name:</span>
-                    <span className="itemValue">City of Light</span>
+                    <span className="itemValue">RCCG CITY OF LIGHT</span>
                     </div>
 
                     <div className="items">
                     <span className="itemKey">Acc Number:</span>
-                    <span className="itemValue">667094359</span>
+                    <span className="itemValue">0115013994</span>
                     </div>
                 </div>
 
                 </div>
 
 
-                <div className="card">
+             {/*     <div className="card">
                     <img src={Fcmb} alt="" />
 
                     <div className="ussdcode">
@@ -181,7 +196,7 @@ const Giving = () => {
                     </div>
                 </div>
 
-                </div>
+                </div>  */}
 
 
             </div>

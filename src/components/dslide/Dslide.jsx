@@ -28,7 +28,7 @@ const Dslide = () => {
        <div className="t-wrapper">
         <div className="t-heading">
             
-             <span>Welcome to City of Light</span>
+             <span>Welcome <br/> To City of Light</span>
            <div className="blur t-blur1" style={{background: "var(--purple)"}}></div>
             <div className="blur t-blur2" style={{background: "skyblue"}}></div>
         </div>

@@ -1,6 +1,7 @@
 import { Facebook, Instagram, MailOutlined, Phone, Pinterest, Room, Twitter } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 //import {mobile} from "../responsive"
 
 const Container = styled.div`
@@ -109,16 +110,67 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title>
         <List>
-            <ListItem>Home</ListItem>
-            <ListItem>About Us</ListItem>
-            <ListItem>Watch Live</ListItem>
-            <ListItem>Members Registration</ListItem>
-            <ListItem>Build Up Your Self</ListItem>
-            <ListItem>Join a community</ListItem>
-            <ListItem>Giving</ListItem>
-            <ListItem>Prayer Team</ListItem>
-            <ListItem>Departments</ListItem>
-            <ListItem>Terms</ListItem>
+         
+         
+          <ListItem >
+          <Link to='/' style={{textDecoration: "none", color: "white"}}>
+            Home
+            </Link>
+            </ListItem>
+          
+            
+            <ListItem>
+            <Link to='/about' style={{textDecoration: "none", color: "white"}}>
+              About Us
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/watchlife' style={{textDecoration: "none", color: "white"}}>
+              Watch Live
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/registermember' style={{textDecoration: "none", color: "white"}}>
+              Members Registration
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/contact' style={{textDecoration: "none", color: "white"}}>
+              Contact Us
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/buildself' style={{textDecoration: "none", color: "white"}}>
+              Become a Worker
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/giving' style={{textDecoration: "none", color: "white"}}>
+              Giving
+              </Link>
+              </ListItem>
+
+            <ListItem>
+              Prayer Team
+              </ListItem>
+
+            <ListItem>
+            <Link to='/department' style={{textDecoration: "none", color: "white"}}>
+              Departments
+              </Link>
+              </ListItem>
+
+            <ListItem>
+            <Link to='/admin' style={{textDecoration: "none", color: "white"}}>
+              Admin
+              </Link>
+              </ListItem>
+
         </List>
       </Center>
       <Right>

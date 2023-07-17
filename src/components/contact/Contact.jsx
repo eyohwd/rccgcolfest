@@ -1,16 +1,37 @@
 import React from 'react';
 import { Facebook, Instagram, MailOutlined, Phone, Room, Twitter } from "@material-ui/icons";
 import './contact.scss';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_ogs06h7', form.current, 'Fc59in1UR0QF5Y0tx')
+      .then((result) => {
+        toast.success("Message sent successfully")
+          //console.log(result.text);
+      }, (error) => {
+        toast.error(error.text)
+          //console.log(error.text);
+      });
+      e.target.reset();
+  };
+
+
   return (
      <div className="containerz">
         <h1 className="heading">Contact</h1>
       <div className='section'>
       <div>
-      <form className='formz'>
+      <form className='formz'  ref={form} onSubmit={sendEmail}>
           
             <label>Name</label>
             <input type="text" name="user_name" placeholder="Full Name" required/>
@@ -35,7 +56,7 @@ const Contact = () => {
               <div className='icons'>
                 <span>
                   <Phone/>
-                  <p>+234 438 247 1670</p>
+                  <p>08093603724</p>
                   </span>
 
                 <span>
@@ -45,22 +66,22 @@ const Contact = () => {
 
                 <span>
                   <MailOutlined/>
-                  <p>rccgcol@gmail.com</p>
+                  <p>rccgcityoflight@gmail.com</p>
                 </span>
 
                 <span>
                   <Room/>
-                  <p>TradeFair, Lagos, Nigeria.</p>
+                  <p> 1st avenue extention festac, Lagos, Nigeria.</p>
                 </span>
 
                 <span>
                   <Twitter/>
-                  <p>@colfestac</p>
+                  <p>rccgcolfestac</p>
                 </span>
 
                 <span>
                   <Instagram/>
-                  <p>@cityoflight</p>
+                  <p>_rccgcolfestac</p>
                 </span>
               </div>
           
