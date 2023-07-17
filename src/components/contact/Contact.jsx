@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Facebook, Instagram, MailOutlined, Phone, Room, Twitter } from "@material-ui/icons";
 import './contact.scss';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import Loader from '../loader/Loader';
+
 
 
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true)
 
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_ogs06h7', form.current, 'Fc59in1UR0QF5Y0tx')
       .then((result) => {
         toast.success("Message sent successfully")
+        setIsLoading(false)
           //console.log(result.text);
       }, (error) => {
         toast.error(error.text)
+        setIsLoading(false)
           //console.log(error.text);
       });
       e.target.reset();
@@ -27,6 +33,8 @@ const Contact = () => {
 
 
   return (
+    <>
+    {isLoading && <Loader/>}
      <div className="containerz">
         <h1 className="heading">Contact</h1>
       <div className='section'>
@@ -90,6 +98,7 @@ const Contact = () => {
       
     </div>
     </div>
+    </>
   );
 }
 
