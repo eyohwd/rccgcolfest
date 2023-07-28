@@ -11,7 +11,7 @@ const [data, setData] = useState([]);
 const confirmDelete = (id) => {
      
   Notiflix.Confirm.show(
-    'Delete Product!!!',
+    'Delete Worker Data!!!',
     'You are about to delete this data',
     'Delete',
     'Cancel',

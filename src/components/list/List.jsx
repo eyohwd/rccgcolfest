@@ -11,7 +11,7 @@ const [data, setData] = useState([]);
 const confirmDelete = (id) => {
      
   Notiflix.Confirm.show(
-    'Delete Product!!!',
+    'Delete Member Data!!!',
     'You are about to delete this data',
     'Delete',
     'Cancel',
@@ -63,13 +63,15 @@ return () => {
 console.log(data);
 
 const columns = [
-    { field: "id", headerName: "ID", width: 120},
+    { field: "id", headerName: "ID", width: 60},
     { field: "name", headerName: "Name", width: 120 },
     { field: "surname", headerName: "Surname", width: 120 },
+    { field: "firsttimer", headerName: "FirstTimer", width: 80 },
     { field: "email", headerName: "Email", width: 100},
     { field: "sex", headerName: "Sex", width: 90},
     { field: "maritalstatus", headerName: "MaritalStatus", width: 100},
     { field: "phonenumber", headerName: "PhoneNumber", width: 150},
+    { field: "mob", headerName: "MOB", width: 90},
     { field: "address", headerName: "Address", width: 150},
     
     
@@ -79,10 +81,12 @@ const rows = data.map((row) => ({
   id: row.id,
   name: row.name,
   surname: row.surname,
+  firsttimer: row.firsttimer,
   email: row.email,
   sex: row.sex,
   maritalstatus: row.maritalstatus,
   phonenumber: row.phonenumber,
+  mob: row.mob,
   address: row.address,
   
   

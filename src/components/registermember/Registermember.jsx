@@ -20,9 +20,14 @@ const Registermember = () => {
   const navigate = useNavigate();
 
   const handleInput = (e) => {
+
+      
+       
      const name = e.target.name;
-     const value = e.target.value;
-     setData({...data, [name]: value})
+     const value = e.target.type === "checkbox"
+     ? e.target.checked : e.target.value
+
+     setData({...data, [name]: value, })
   }
   console.log(data)
 
@@ -58,7 +63,14 @@ const Registermember = () => {
             </div>
             <div className="right">
                 <form onSubmit={handleAdd} >
+
+                <div className="formInput" style={{display: "flex", alignItems: "center", gap:"10px", marginBottom:"30px"}}>
+                    
+                    <label htmlFor="">First Timer:</label>
+                        <input type="checkbox" placeholder='name' name="firsttimer"  onChange={handleInput} style={{width: '10%'}} />
+                    </div>
                 <div className="formInput">
+
                     <label htmlFor="">Name:</label>
                         <input type="text" placeholder='name' name="name" onChange={handleInput} />
                     </div>
@@ -91,7 +103,12 @@ const Registermember = () => {
 
                     <div className="formInput">
                     <label htmlFor="">Marital status:</label>
-                        <input type="text" placeholder='marital status' name="maritalstatus" onChange={handleInput} />
+                        <input type="text" placeholder='marital status' name="maritalstatus" onChange={handleInput}   />
+                    </div>
+
+                    <div className="formInput">
+                    <label htmlFor="">Month of Birth:</label>
+                        <input type="text" placeholder='month of birth' name="mob" onChange={handleInput} />
                     </div>
 
                     <button type='submit'>
